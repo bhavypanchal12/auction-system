@@ -1,0 +1,112 @@
+# ========================================
+# AuctionPHP - Complete .gitignore
+# ========================================
+
+# PHP / Web Server
+*.log
+*.lock
+.env
+.env.local
+.env.*.local
+config/database.php  # NEVER commit passwords!
+.DS_Store
+Thumbs.db
+
+# Database
+*.sql
+*.sql.gz
+*.backup
+*.dump
+db.sqlite
+database.sqlite
+
+# XAMPP / Local Dev
+xampp/
+htdocs/
+vhosts/
+*.pid
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node Modules (if added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer
+/vendor/
+composer.lock
+
+# Temporary files
+tmp/
+temp/
+cache/
+logs/
+
+# Debug / Testing
+debug/
+tests/
+.phpunit.result.cache
+
+# Images / Uploads (local testing)
+assets/images/*.jpg
+assets/images/*.png
+assets/images/*.gif
+!assets/images/.gitkeep
+
+# Email templates
+mails/
+
+# SSL Certs
+*.pem
+*.crt
+*.key
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# OS
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# Production Configs
+config/production/
+config/live/
+
+# Sensitive files
+/stripe-private-key.php
+/paypal-config.php
+/aws-config.php
+
+# Git
+.git/
